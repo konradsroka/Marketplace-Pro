@@ -274,13 +274,13 @@ add_filter('show_admin_bar', '__return_false');
 add_action('wp_enqueue_scripts', 'oa_add_google_fonts', 0 );
 function oa_add_google_fonts() {
 
-        wp_register_style( 'oa-google-fonts-source-sans-pro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' );
+        wp_register_style( 'oa-google-fonts-source-sans-pro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' );
         wp_enqueue_style( 'oa-google-fonts-source-sans-pro' );
 
-        wp_register_style( 'oa-google-fonts-oswald', 'http://fonts.googleapis.com/css?family=Oswald' );
+        wp_register_style( 'oa-google-fonts-oswald', '//fonts.googleapis.com/css?family=Oswald' );
         wp_enqueue_style( 'oa-google-fonts-oswald' );
 
-        wp_register_style( 'oa-google-fonts-open-sans-condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' );
+        wp_register_style( 'oa-google-fonts-open-sans-condensed', '//fonts.googleapis.com/css?family=Open+Sans+Condensed:300' );
         wp_enqueue_style( 'oa-google-fonts-open-sans-condensed' );
 
 }
